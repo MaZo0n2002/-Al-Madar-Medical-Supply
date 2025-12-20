@@ -108,6 +108,7 @@ $('.navbar-toggler').on('click', function() {
         }
     });
   
+
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -121,6 +122,19 @@ $('.navbar-toggler').on('click', function() {
             '<i class="bi bi-arrow-right"></i>'
         ],
     });
+
+    const currentPage = decodeURIComponent(
+  window.location.pathname.split("/").pop()
+);
+
+document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  } else {
+    link.classList.remove("active");
+  }
+});
+
   
   })(jQuery);
   
