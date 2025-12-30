@@ -4064,12 +4064,16 @@ fieldset:disabled .btn {
 .card-img-top {
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
+
 }
+
 .card-img,
 .card-img-bottom {
   border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 1px;
+  border-bottom-left-radius: 1px; 
 }
+
+
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
